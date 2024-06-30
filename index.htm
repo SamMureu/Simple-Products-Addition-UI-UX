@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Addition UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>ADD PRODUCT</h1>
+    <div class="container">
+        <div class="add-product">
+            
+            <form id="productForm">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="productImage">Product Image:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*">
+              
+            </form>
+        </div>
+    </div>
+    <h1>PRICE AND VARIANTS</h1>
+    <div class="container" >
+        <div class="pricevariant">
+           
+            <form id="pricevariants">
+                <label for="checkbox1">
+                    Are you adding more than one attribute
+                  <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
+                  <label for="optionType">Attribute 1:</label>
+                  <select id="optionType">
+                      <option value="size">Size</option>
+                      <option value="color">Color</option>
+                      <option value="volume">Volume</option>
+                      <option value="flavor">Flavor</option>
+                  </select>
+                    
+                </label>
+                <label for="optionType">Attribute 2:</label>
+                  <select id="optionType">
+                    <option value="none">none</option>
+                      <option value="size">Size</option>
+                      <option value="color">Color</option>
+                      <option value="volume">Volume</option>
+                      <option value="flavor">Flavor</option>
+                  </select>
+                    
+                </label>
+                <label for="variation">variation:</label>
+                <textarea id="variation" name="variation" required></textarea>
+                <label for="Price">Price:</label>
+                <textarea id="price" name="price" required></textarea>
+                <label for="QTY">QTY:</label>
+                <textarea id="QTY" name="QTY" required></textarea>
+                <button type="button">Add more variants</button>
+            </form>
+        </div>
+    </div>  
+    <h1>PRODUCT DESCRIPTION</h1>
+    <div class="container" >
+        <div class="product-description">
+           
+            <form id="productdescription">
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+            </form>
+        </div>
+    </div>  
+
+    <div class="container" >
+    <div class="button">
+        <form id="button">
+        
+                <button type="button" onclick="UploadProduct()">Upload Product</button>
+        </form>
+    </div>
+</div>
+<div class="container" >
+    <div class="button">
+        <form id="button">
+        
+                <button type="button" onclick="clear()">clear</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
